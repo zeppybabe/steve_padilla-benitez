@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Steve Padilla-Benitez</title>
+<meta name="description" content="Steve Padilla-Benitez — Information Systems graduate working in Linux, network security, and reverse engineering.">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@600;700;900&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+  a { color: var(--color-accent-300); text-decoration: none; }
+  a:hover { color: var(--color-accent); }
+  summary::-webkit-details-marker { display: none; }
+  summary { list-style: none; }
+  html { scroll-behavior: smooth; }
+  ::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
+  .rwrap { position: relative; overflow: hidden; }
+  .rtxt { clip-path: inset(0 100% 0 0); }
+  details[open] .rtxt { animation: rv 0.9s steps(44, end) forwards; }
+  .rbar { position: absolute; top: 0; left: -12px; width: 12px; height: 100%; background: var(--color-text); opacity: 0; pointer-events: none; }
+  details[open] .rbar { animation: bar 0.9s steps(44, end) forwards; }
+  @keyframes rv { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
+  @keyframes bar { 0% { left: 0; opacity: 0.9; } 98% { opacity: 0.9; } 100% { left: 100%; opacity: 0; } }
+  .hv-text:hover { color: var(--color-accent); }
+  .hv-btn-primary:hover { background: color-mix(in srgb, var(--color-accent) 12%, transparent); }
+  .hv-btn-secondary:hover { border-color: var(--color-accent); background: color-mix(in srgb, var(--color-accent) 8%, transparent); }
+  .hv-row:hover { background: color-mix(in srgb, var(--color-accent) 6%, transparent); }
+</style>
+</head>
+<body>
+<div style="min-height:100vh;background:var(--color-bg);color:var(--color-text);font-family:'IBM Plex Mono', monospace;letter-spacing:0.01em;">
+  <nav style="position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:26px;padding:14px 32px;background:color-mix(in srgb, var(--color-bg) 86%, transparent);backdrop-filter:blur(12px);font-size:12px;letter-spacing:0.12em;text-transform:uppercase;">
+    <a href="#top" data-scramble style="margin-right:auto;color:var(--color-text);font-family:'Doto', monospace;font-weight:900;font-size:16px;letter-spacing:0.08em;">STEVE P-B</a>
+    <a href="#projects" data-scramble style="color:color-mix(in srgb, var(--color-text) 65%, transparent);" class="hv-text">Index</a>
+    <a href="#writing" data-scramble style="color:color-mix(in srgb, var(--color-text) 65%, transparent);" class="hv-text">Writing</a>
+    <a href="#experience" data-scramble style="color:color-mix(in srgb, var(--color-text) 65%, transparent);" class="hv-text">Experience</a>
+    <a href="#skills" data-scramble style="color:color-mix(in srgb, var(--color-text) 65%, transparent);" class="hv-text">Skills</a>
+    <a href="#contact" data-scramble style="color:color-mix(in srgb, var(--color-text) 65%, transparent);" class="hv-text">Contact</a>
+  </nav>
+  <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+  <header id="top" style="padding:96px 32px 72px;max-width:1160px;margin:0 auto;">
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:28px;">
+      <span style="display:inline-block;width:28px;height:2px;background:var(--color-accent);"></span>
+      <span data-scramble style="font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--color-accent-300);">Los Angeles, CA — Information Systems · 2026</span>
+    </div>
+    <h1 style="font-family:'Doto', monospace;font-weight:900;font-size:clamp(48px, 8.5vw, 118px);line-height:1.02;letter-spacing:0.01em;margin:0 0 36px;text-transform:uppercase;">
+      <span data-scramble style="display:block;">Steve</span>
+      <span data-scramble style="display:block;">Padilla&#8209;Benitez</span>
+    </h1>
+    <p style="max-width:640px;font-size:14px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 82%, transparent);margin:0 0 32px;text-wrap:pretty;">
+      Information Systems graduate working in Linux, network security, and reverse engineering. Self-taught packet sniffing and diffing, Bash CLI tooling for AI and non-AI use, and a randomized music streaming site serving 20k+ monthly requests — plus enterprise ETL, SIOP, SAP, and database work.
+    </p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px;font-size:12px;letter-spacing:0.06em;">
+      <a href="https://github.com/zeppybabe" target="_blank" rel="noopener" data-scramble style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid var(--color-accent);border-radius:var(--radius-md);color:var(--color-text);" class="hv-btn-primary">GITHUB ↗</a>
+      <a href="https://www.kaggle.com/stevepadillab" target="_blank" rel="noopener" data-scramble style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid var(--color-neutral-700);border-radius:var(--radius-md);color:var(--color-text);" class="hv-btn-secondary">KAGGLE ↗</a>
+      <a href="mailto:stevepadillabenitez@gmail.com" data-scramble style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid var(--color-neutral-700);border-radius:var(--radius-md);color:var(--color-text);" class="hv-btn-secondary">EMAIL</a>
+      <a href="#" data-scramble style="display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border:1px solid var(--color-neutral-700);border-radius:var(--radius-md);color:var(--color-text);" class="hv-btn-secondary">LINKEDIN ↗</a>
+    </div>
+  </header>
+
+  <section id="projects" style="max-width:1160px;margin:0 auto;padding:48px 32px 24px;">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+      <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0;">Project Index</h2>
+      <span style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb, var(--color-text) 45%, transparent);">hover a row</span>
+    </div>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:12px 0 4px;"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">01</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">AntCrate</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">Bash · AI-agent governance</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2026</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <p class="rtxt" style="font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0 0 12px;">A pure-Bash governance harness routing destructive and remote-facing AI-agent operations through a single auditable gateway — prompt-injection protection, pre-execution hooks that statically parse agent-issued shell commands to block recursive deletes and root commands, secret guarding, and enforced human approval on irreversible actions. Validated with 1k+ bats scenarios, ShellCheck and gitleaks gates in self-hosted CI.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+          <span class="tag tag-neutral">Bash</span><span class="tag tag-neutral">jq</span><span class="tag tag-neutral">inotify</span><span class="tag tag-neutral">bats · CI</span>
+          <a href="https://github.com/zeppybabe/antcrate" target="_blank" rel="noopener" style="font-size:12px;">github.com/zeppybabe/antcrate ↗</a>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">02</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">gloriousctl4linux</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">C · USB HID reverse engineering</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2025</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <p class="rtxt" style="font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0 0 12px;">Ran Glorious's Windows-only configuration software in a VM and intercepted its USB traffic on the host to identify target HID packets via Wireshark. Automated capture retrieval across setting changes with Python, tshark, and Bash; mapped fields to byte offsets and extended the open-source gloriousctl (C, hidapi/hidraw) — modeling 192- and 256-byte payloads fragmented across sequenced 64-byte reports as packed structs with little-endian scaled fields.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+          <span class="tag tag-neutral">C</span><span class="tag tag-neutral">Wireshark · tshark</span><span class="tag tag-neutral">hidapi / hidraw</span><span class="tag tag-neutral">gdb · strace</span>
+          <a href="https://github.com/zeppybabe/gloriousctl-linux" target="_blank" rel="noopener" style="font-size:12px;">github.com/zeppybabe/gloriousctl-linux ↗</a>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">03</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">rfm-music.uk</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">Node.js · production deployment</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2025</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <p class="rtxt" style="font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0 0 12px;">Randomized music streaming site serving 500+ monthly unique visitors and 20k+ monthly requests — rebuilt from a heavier framework stack to plain HTML/CSS/JS with a Node.js backend and YouTube API v3. Containerized on a DigitalOcean Ubuntu VPS hardened with UFW and fail2ban behind Cloudflare with no origin ingress; custom managed rulesets, DDoS protection, bot fight mode, AI-crawler blocking, and leaked-credential detection.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+          <span class="tag tag-neutral">Node.js</span><span class="tag tag-neutral">Docker</span><span class="tag tag-neutral">DigitalOcean</span><span class="tag tag-neutral">Cloudflare</span>
+          <a href="https://rfm-music.uk" target="_blank" rel="noopener" style="font-size:12px;">rfm-music.uk ↗</a>
+          <span style="font-size:11px;color:color-mix(in srgb, var(--color-text) 45%, transparent);">source private</span>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">04</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">Segmented Home Network</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">OpenWrt · Raspberry Pi 5</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2025</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <p class="rtxt" style="font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0 0 12px;">A hardened home network on headless OpenWrt with eight 802.1Q VLANs — untrusted IoT isolation, local DNS/DHCP filtering, and per-VLAN firewall policy via nftables, UFW, and fail2ban. Includes a Bash thermal-monitoring script for the Pi's SoC and a fully documented uci command set for reproducible rebuilds, plus an isolated VLAN dedicated to a malware and reverse-engineering lab.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+          <span class="tag tag-neutral">OpenWrt</span><span class="tag tag-neutral">802.1Q VLANs</span><span class="tag tag-neutral">nftables</span><span class="tag tag-neutral">fail2ban</span>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">05</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">Friendly Cars Dealership DB</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">MariaDB · pure SQL</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2026</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <p class="rtxt" style="font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0 0 12px;">A MariaDB demo database for a small car dealership — schema design, indexing, business and audit triggers, views, seven analytical queries, an object-relational variant, and a fragmentation pass. No application code: the whole project runs from the mariadb CLI plus Bash runners, portable via nix with no root required.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+          <span class="tag tag-neutral">MariaDB</span><span class="tag tag-neutral">SQL triggers · views</span><span class="tag tag-neutral">Bash runners</span>
+          <a href="https://github.com/zeppybabe/friendly-cars-dealership" target="_blank" rel="noopener" style="font-size:12px;">github.com/zeppybabe/friendly-cars-dealership ↗</a>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">06</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">cc-shell-python</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">Python · POSIX shell</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2025</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <p class="rtxt" style="font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0 0 12px;">A POSIX-compliant shell built in Python for the CodeCrafters "Build Your Own Shell" challenge — command parsing, a REPL, builtins like cd, pwd, and echo, and execution of external programs.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
+          <span class="tag tag-neutral">Python</span><span class="tag tag-neutral">REPL · parsing</span>
+          <a href="https://github.com/zeppybabe/cc-shell-python" target="_blank" rel="noopener" style="font-size:12px;">github.com/zeppybabe/cc-shell-python ↗</a>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+  </section>
+
+  <section id="writing" style="max-width:1160px;margin:0 auto;padding:64px 32px 24px;">
+    <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0 0 12px;">Writing / Research</h2>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:0 0 4px;"></div>
+    <a href="https://www.kaggle.com/code/stevepadillab/ai-and-the-us-tech-job-market-07-27-26" target="_blank" rel="noopener" style="display:grid;grid-template-columns:52px 1fr 72px;gap:16px;align-items:baseline;padding:18px 10px;border-radius:var(--radius-md);color:var(--color-text);" class="hv-row">
+      <span style="font-size:13px;color:var(--color-accent);">A1</span>
+      <span>
+        <span data-scramble style="display:block;font-family:'Doto', monospace;font-weight:700;font-size:clamp(16px,2vw,23px);letter-spacing:0.03em;text-transform:uppercase;margin-bottom:6px;">AI and the US Tech Job Market</span>
+        <span style="display:block;font-size:12px;line-height:1.7;color:color-mix(in srgb, var(--color-text) 60%, transparent);max-width:680px;">What the data actually supports — a reproducible Kaggle study of where AI is reshaping technology employment. Every model compared to a naive baseline; out-of-sample or it didn't happen. Kaggle notebook ↗</span>
+      </span>
+      <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2026</span>
+    </a>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+  </section>
+
+  <section id="experience" style="max-width:1160px;margin:0 auto;padding:64px 32px 24px;">
+    <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
+      <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0;">Experience</h2>
+      <span style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb, var(--color-text) 45%, transparent);">hover a row</span>
+    </div>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:12px 0 4px;"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">E1</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">CIS Lab Assistant</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">CSU Dominguez Hills · Carson, CA</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2026</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <ul class="rtxt" style="margin:0;padding-left:18px;font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);display:flex;flex-direction:column;gap:8px;">
+          <li>Led code review and debugging sessions, troubleshooting issues for 30+ students across JS, SQL, and Data Communications in-person and remotely via Zoom, improving assignment completion rates.</li>
+          <li>Improved student understanding of Business Programming by guiding use of external Python libraries and clarifying language syntax, resulting in higher testing, grading, and functional comprehension scores.</li>
+        </ul>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">E2</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">Database Administrator Intern</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">Restore LA · Los Angeles, CA</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2025–26</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <ul class="rtxt" style="margin:0;padding-left:18px;font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);display:flex;flex-direction:column;gap:8px;">
+          <li>Designed a production MySQL schema utilizing Row-Level Security (RLS) and strict PII-compliance controls, ensuring safe consolidation of sensitive client records.</li>
+          <li>Engineered a secure Python ETL pipeline to coordinate Google Sheets workflows with parameterized SQL and aggregate reporting, streamlining data integration.</li>
+          <li>Structured aggregate reporting in Google Sheets to support variance analysis and acceptance-rate comparisons across demographic service areas, enhancing decision-making.</li>
+          <li>Built a scalable pipeline to migrate spreadsheet-level data into a relational schema, preserving reporting logic and reducing redevelopment time.</li>
+          <li>Increased in-house WiFi user capacity by 200% by setting up admin password and optimizing network configuration.</li>
+        </ul>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">E3</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">Supply Chain Inventory Planning Intern</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">FDH Aero · Commerce, CA</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2025</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <ul class="rtxt" style="margin:0;padding-left:18px;font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);display:flex;flex-direction:column;gap:8px;">
+          <li>Saved an estimated 40 hours per week of manual reporting by scripting ETL pipelines to automate monthly enterprise demand projections into a consolidated workbook.</li>
+          <li>Optimized SQL workflows across large-scale datasets and partnered with leadership to construct a global Power BI dashboard (DAX, custom slicers), improving enterprise-wide inventory forecasting.</li>
+          <li>Audited contract and location data across global regions through the in-house ERP system, identifying outdated contracts, data entry errors, and underperforming sites that distorted demand forecasts.</li>
+          <li>Queried Azure-hosted global data to provide visibility into regional performance, supporting short- and long-term inventory forecasting decisions with executive leadership.</li>
+        </ul>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">E4</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">Computer Science Scholar</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">CSUDH · Carson, CA</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2025</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <ul class="rtxt" style="margin:0;padding-left:18px;font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);display:flex;flex-direction:column;gap:8px;">
+          <li>Presented programming concepts to K-12 students through the Coding Club initiative across Los Angeles County, increasing student engagement in STEM.</li>
+          <li>Developed unplugged, hands-on activities to simplify coding concepts, enabling students to grasp challenging material through experiential learning.</li>
+          <li>Executed contingency plans to maintain lesson continuity when a co-instructor was unavailable, ensuring smooth delivery of technical presentations.</li>
+          <li>Instructed using tools like Swift Playgrounds, Sphero Bolt robotics, and 3D printing software (UltiMaker Cura, Tinkercad), enhancing technical exposure for students.</li>
+          <li>Troubleshot hardware and software issues, particularly with HTTPS web access on iOS devices, maintaining lesson functionality and student engagement.</li>
+          <li>Documented session outcomes, reflecting on effective methods of student engagement and evaluating activities yielding the highest interaction.</li>
+        </ul>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+
+    <details data-hover>
+      <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
+        <span style="font-size:13px;color:var(--color-accent);">E5</span>
+        <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">TAP Tutor</span>
+        <span data-scramble style="font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 55%, transparent);">CSUDH · Carson, CA</span>
+        <span style="font-size:13px;text-align:right;color:color-mix(in srgb, var(--color-text) 55%, transparent);">2024–25</span>
+      </summary>
+      <div style="padding:4px 10px 26px 68px;max-width:780px;">
+        <div class="rwrap"><div class="rbar"></div>
+        <ul class="rtxt" style="margin:0;padding-left:18px;font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);display:flex;flex-direction:column;gap:8px;">
+          <li>Provided one-on-one tutoring sessions to students in math, science, and English, supporting academic improvement across multiple disciplines.</li>
+          <li>Improved student performance by implementing effective study strategies and techniques, resulting in higher test scores and comprehension.</li>
+          <li>Monitored student progress and adjusted teaching methods accordingly to ensure comprehension and retention of material.</li>
+          <li>Utilized creative teaching methods such as visual aids, interactive activities, and educational games to enhance learning experiences.</li>
+          <li>Incorporated technology into lessons using educational apps, online resources, and virtual whiteboards, increasing student engagement.</li>
+          <li>Helped students build confidence in their abilities by recognizing and praising their achievements, fostering a positive learning environment.</li>
+        </ul>
+        </div>
+      </div>
+    </details>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
+  </section>
+
+  <section id="skills" style="max-width:1160px;margin:0 auto;padding:64px 32px 24px;">
+    <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0 0 12px;">Skills</h2>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:0 0 28px;"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:28px 40px;max-width:1000px;">
+      <div>
+        <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:8px;">Languages</div>
+        <p style="font-size:13px;line-height:1.8;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0;">C/C++, Bash, Python (Pandas, NumPy, Scikit-Learn), SQL, JavaScript/TypeScript, Node.js, R</p>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:8px;">Systems &amp; Networking</div>
+        <p style="font-size:13px;line-height:1.8;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0;">Linux, OpenWrt, systemd, nftables, UFW, fail2ban, 802.1Q VLANs, DNS/DHCP, SSH, iproute2, Docker, Cloudflare Tunnel, Wireshark/tshark/tcpdump, USBPcap, gdb, strace, hidapi/hidraw</p>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:8px;">Databases</div>
+        <p style="font-size:13px;line-height:1.8;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0;">MySQL, SQLite, MariaDB, PostgreSQL, SSMS, Neo4j, BigQuery</p>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:8px;">ERP &amp; Visualization</div>
+        <p style="font-size:13px;line-height:1.8;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0;">MS Office (Excel, PowerPoint, Projects, Power BI), LibreOffice Suite, Tableau, LucidCharts, Google Suite</p>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:8px;">AI</div>
+        <p style="font-size:13px;line-height:1.8;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0;">Claude (Code, Skills, Plugins, Hooks), Gemini, local models, custom tool-use harnesses</p>
+      </div>
+      <div>
+        <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:8px;">Spoken</div>
+        <p style="font-size:13px;line-height:1.8;color:color-mix(in srgb, var(--color-text) 80%, transparent);margin:0;">English (Native), Spanish (Native)</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" style="max-width:1160px;margin:0 auto;padding:64px 32px 24px;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));gap:48px;">
+      <div>
+        <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0 0 12px;">Education</h2>
+        <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:0 0 20px;"></div>
+        <div style="margin-bottom:20px;">
+          <div style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:4px;">B.S. Information Systems</div>
+          <div style="font-size:12px;line-height:1.7;color:color-mix(in srgb, var(--color-text) 60%, transparent);">CSU Dominguez Hills · 2026 · Magna Cum Laude<br>3.9 CSUDH GPA / 3.6 Overall</div>
+        </div>
+        <div>
+          <div style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.04em;text-transform:uppercase;margin-bottom:4px;">A.S. Business Administration</div>
+          <div style="font-size:12px;line-height:1.7;color:color-mix(in srgb, var(--color-text) 60%, transparent);">Santa Monica College · 2024</div>
+        </div>
+      </div>
+      <div>
+        <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0 0 12px;">Certifications</h2>
+        <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:0 0 20px;"></div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:13px;color:color-mix(in srgb, var(--color-text) 80%, transparent);">
+          <span>Google Data Analytics</span>
+          <span>Excel: Advanced Formulas and Functions</span>
+          <span>Project Management</span>
+          <span>Learning SQL</span>
+          <span>Kaggle Python</span>
+          <span>Cybersecurity Awareness · 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact" style="max-width:1160px;margin:0 auto;padding:96px 32px 80px;">
+    <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0 0 12px;">Contact</h2>
+    <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:0 0 32px;"></div>
+    <a href="mailto:stevepadillabenitez@gmail.com" data-scramble style="display:block;font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,3.2vw,38px);letter-spacing:0.02em;color:var(--color-text);margin-bottom:24px;text-transform:uppercase;overflow-wrap:anywhere;" class="hv-text">stevepadillabenitez@gmail.com</a>
+    <div style="display:flex;flex-wrap:wrap;gap:12px 28px;font-size:12px;align-items:center;letter-spacing:0.04em;">
+      <span style="color:color-mix(in srgb, var(--color-text) 65%, transparent);">(323) 847-9718</span>
+      <a href="https://github.com/zeppybabe" target="_blank" rel="noopener" data-scramble>github.com/zeppybabe ↗</a>
+      <a href="https://www.kaggle.com/stevepadillab" target="_blank" rel="noopener" data-scramble>kaggle.com/stevepadillab ↗</a>
+      <a href="#" data-scramble>LinkedIn ↗</a>
+    </div>
+    <p style="margin:64px 0 0;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 35%, transparent);">Steve Padilla-Benitez · Los Angeles · 2026</p>
+  </footer>
+</div>
+<script>
+(() => {
+  function scramble(el) {
+    if (!el.dataset.orig) el.dataset.orig = el.textContent;
+    const orig = el.dataset.orig;
+    const chars = '!<>-_\\/[]{}=+*^?#01234567899ABCDEFXZ';
+    const total = Math.min(Math.max(14, orig.length + 4), 40);
+    let frame = 0;
+    cancelAnimationFrame(el._raf);
+    const step = () => {
+      frame++;
+      const reveal = Math.floor((frame / total) * orig.length);
+      let out = orig.slice(0, reveal);
+      for (let i = reveal; i < orig.length; i++) {
+        out += orig[i] === ' ' ? ' ' : chars[(Math.random() * chars.length) | 0];
+      }
+      el.textContent = out;
+      if (frame < total) el._raf = requestAnimationFrame(step);
+      else el.textContent = orig;
+    };
+    el._raf = requestAnimationFrame(step);
+  }
+  function attach() {
+    document.querySelectorAll('[data-scramble]').forEach((el) => {
+      if (el._sc) return; el._sc = true;
+      el.addEventListener('mouseenter', () => scramble(el));
+    });
+    document.querySelectorAll('details[data-hover]').forEach((d) => {
+      if (d._hv) return; d._hv = true;
+      d.addEventListener('mouseenter', () => {
+        if (!d.open) {
+          d.open = true;
+          d.querySelectorAll('summary [data-scramble]').forEach((t) => scramble(t));
+        }
+      });
+      d.addEventListener('mouseleave', () => { d.open = false; });
+    });
+  }
+  attach();
+})();
+</script>
+</body>
+</html>
