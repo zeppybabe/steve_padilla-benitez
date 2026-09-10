@@ -24,10 +24,10 @@
   details[open] .rbar { animation: bar 0.9s steps(44, end) forwards; }
   @keyframes rv { from { clip-path: inset(0 100% 0 0); } to { clip-path: inset(0 0 0 0); } }
   @keyframes bar { 0% { left: 0; opacity: 0.9; } 98% { opacity: 0.9; } 100% { left: 100%; opacity: 0; } }
-  .hv-text:hover { color: var(--color-accent); }
-  .hv-btn-primary:hover { background: color-mix(in srgb, var(--color-accent) 12%, transparent); }
+  .hv-text:active { color: var(--color-accent); }
+  .hv-btn-primary:active { background: color-mix(in srgb, var(--color-accent) 12%, transparent); }
   .hv-btn-secondary:hover { border-color: var(--color-accent); background: color-mix(in srgb, var(--color-accent) 8%, transparent); }
-  .hv-row:hover { background: color-mix(in srgb, var(--color-accent) 6%, transparent); }
+  .hv-row:active { background: color-mix(in srgb, var(--color-accent) 6%, transparent); }
 </style>
 </head>
 <body>
@@ -65,11 +65,11 @@
   <section id="projects" style="max-width:1160px;margin:0 auto;padding:48px 32px 24px;">
     <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
       <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0;">Project Index</h2>
-      <span style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb, var(--color-text) 45%, transparent);">hover a row</span>
+      <span style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb, var(--color-text) 45%, transparent);">click a row</span>
     </div>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:12px 0 4px;"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">01</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">AntCrate</span>
@@ -88,7 +88,7 @@
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">02</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">gloriousctl4linux</span>
@@ -107,7 +107,7 @@
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">03</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">rfm-music.uk</span>
@@ -127,7 +127,7 @@
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">04</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">Segmented Home Network</span>
@@ -145,7 +145,7 @@
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">05</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">Friendly Cars Dealership DB</span>
@@ -164,7 +164,7 @@
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 72px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">06</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,2.4vw,27px);letter-spacing:0.04em;text-transform:uppercase;">cc-shell-python</span>
@@ -201,11 +201,11 @@
   <section id="experience" style="max-width:1160px;margin:0 auto;padding:64px 32px 24px;">
     <div style="display:flex;align-items:baseline;gap:16px;margin-bottom:8px;">
       <h2 data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:15px;letter-spacing:0.18em;text-transform:uppercase;color:var(--color-accent-300);margin:0;">Experience</h2>
-      <span style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb, var(--color-text) 45%, transparent);">hover a row</span>
+      <span style="font-size:11px;letter-spacing:0.06em;color:color-mix(in srgb, var(--color-text) 45%, transparent);">click a row</span>
     </div>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:12px 0 4px;"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">E1</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">CIS Lab Assistant</span>
@@ -217,13 +217,14 @@
         <ul class="rtxt" style="margin:0;padding-left:18px;font-size:13px;line-height:1.75;color:color-mix(in srgb, var(--color-text) 80%, transparent);display:flex;flex-direction:column;gap:8px;">
           <li>Led code review and debugging sessions, troubleshooting issues for 30+ students across JS, SQL, and Data Communications in-person and remotely via Zoom, improving assignment completion rates.</li>
           <li>Improved student understanding of Business Programming by guiding use of external Python libraries and clarifying language syntax, resulting in higher testing, grading, and functional comprehension scores.</li>
+          <li>Diagnosed school computers and personal computers from Windows 10/11 to macOS X that were slow by offloading background programs, verifying installation and sign-ins, updating outdated drivers, running disk clean up, scanning for malware, and securing internet connectivity.</li>
         </ul>
         </div>
       </div>
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">E2</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">Database Administrator Intern</span>
@@ -244,7 +245,7 @@
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">E3</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">Supply Chain Inventory Planning Intern</span>
@@ -264,7 +265,7 @@
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">E4</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">Computer Science Scholar</span>
@@ -286,7 +287,7 @@
     </details>
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);"></div>
 
-    <details data-hover>
+    <details data-click>
       <summary style="display:grid;grid-template-columns:52px 1fr auto 96px;gap:16px;align-items:baseline;padding:18px 10px;cursor:pointer;border-radius:var(--radius-md);" class="hv-row">
         <span style="font-size:13px;color:var(--color-accent);">E5</span>
         <span data-scramble style="font-family:'Doto', monospace;font-weight:700;font-size:clamp(15px,1.9vw,21px);letter-spacing:0.03em;text-transform:uppercase;">TAP Tutor</span>
@@ -374,7 +375,6 @@
     <div style="height:1px;background:linear-gradient(to right, transparent, var(--color-divider) 48px, var(--color-divider) calc(100% - 48px), transparent);margin:0 0 32px;"></div>
     <a href="mailto:stevepadillabenitez@gmail.com" data-scramble style="display:block;font-family:'Doto', monospace;font-weight:700;font-size:clamp(18px,3.2vw,38px);letter-spacing:0.02em;color:var(--color-text);margin-bottom:24px;text-transform:uppercase;overflow-wrap:anywhere;" class="hv-text">stevepadillabenitez@gmail.com</a>
     <div style="display:flex;flex-wrap:wrap;gap:12px 28px;font-size:12px;align-items:center;letter-spacing:0.04em;">
-      <span style="color:color-mix(in srgb, var(--color-text) 65%, transparent);">(323) 847-9718</span>
       <a href="https://github.com/zeppybabe" target="_blank" rel="noopener" data-scramble>github.com/zeppybabe ↗</a>
       <a href="https://www.kaggle.com/stevepadillab" target="_blank" rel="noopener" data-scramble>kaggle.com/stevepadillab ↗</a>
       <a href="#" data-scramble>LinkedIn ↗</a>
@@ -388,7 +388,7 @@
     if (!el.dataset.orig) el.dataset.orig = el.textContent;
     const orig = el.dataset.orig;
     const chars = '!<>-_\\/[]{}=+*^?#01234567899ABCDEFXZ';
-    const total = Math.min(Math.max(14, orig.length + 4), 40);
+    const total = Math.min(Math.max(110, orig.length + 4), 130);
     let frame = 0;
     cancelAnimationFrame(el._raf);
     const step = () => {
@@ -404,23 +404,28 @@
     };
     el._raf = requestAnimationFrame(step);
   }
-  function attach() {
-    document.querySelectorAll('[data-scramble]').forEach((el) => {
-      if (el._sc) return; el._sc = true;
+
+  function attach(root) {
+    root = root || document;
+
+    root.querySelectorAll('[data-scramble]').forEach((el) => {
+      if (el._sc) return;
+      el._sc = true;
       el.addEventListener('mouseenter', () => scramble(el));
     });
-    document.querySelectorAll('details[data-hover]').forEach((d) => {
-      if (d._hv) return; d._hv = true;
-      d.addEventListener('mouseenter', () => {
-        if (!d.open) {
-          d.open = true;
-          d.querySelectorAll('summary [data-scramble]').forEach((t) => scramble(t));
-        }
+
+    root.querySelectorAll('details[data-click]').forEach((d) => {
+      if (d._hv) return;
+      d._hv = true;
+      d.addEventListener('toggle', () => {
+        if (!d.open) return;
+        d.querySelectorAll('summary [data-scramble]').forEach((t) => scramble(t));
       });
-      d.addEventListener('mouseleave', () => { d.open = false; });
     });
   }
+
   attach();
+  window.rescramble = attach;
 })();
 </script>
 </body>
